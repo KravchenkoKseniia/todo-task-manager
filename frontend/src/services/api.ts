@@ -1,8 +1,11 @@
 ﻿import axios from 'axios';
 
+// Get API URL from environment variable or use default for local development
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
+
 // Create axios instance with base URL
 const api = axios.create({
-  baseURL: 'http://localhost:8000/api', // Use environment variable in production
+  baseURL: API_URL,
 });
 
 // Task types
