@@ -3,5 +3,6 @@
 npm install
 # Build the Next.js app
 npm run build
-# Create a temporary file to help Render detect the site's structure
+# Create a .nojekyll file to help with proper path resolution
 touch out/.nojekyll
+
