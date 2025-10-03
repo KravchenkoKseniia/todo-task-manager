@@ -3,6 +3,6 @@
 npm install
 # Build the Next.js app
 npm run build
-# Create a .nojekyll file to help with proper path resolution
-touch out/.nojekyll
+# Create index.html in the root directory
+cp out/index.html out/404.html
 
