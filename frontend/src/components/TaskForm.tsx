@@ -33,7 +33,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ task, onSubmit, onCancel }) => {
       if (task) {
         const taskUpdate: TaskUpdate = {
           title,
-          description: description || null,
+          description: description || undefined,
           priority
         };
         await taskApi.updateTask(task.id, taskUpdate);
